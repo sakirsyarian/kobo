@@ -1,4 +1,9 @@
 import Image from "next/image";
+import { Lora } from "next/font/google";
+
+const lora = Lora({
+  subsets: ["latin"],
+});
 
 export default function Feature() {
   const features = [
@@ -20,7 +25,7 @@ export default function Feature() {
   ];
 
   return (
-    <div className="bg-[#fff]">
+    <div id="keunggulan" className="bg-[#2B1E0F] text-white">
       <div className="container">
         <div className="py-24 grid grid-cols-2 items-center gap-8">
           {/* left */}
@@ -36,8 +41,10 @@ export default function Feature() {
           <div className="space-y-8">
             {features.map((feature, index) => (
               <div key={index}>
-                <h3 className="font-semibold text-xl">{feature.title}</h3>
-                <p className="mt-5">{feature.description}</p>
+                <div className={lora.className}>
+                  <h3 className="font-semibold text-xl">{feature.title}</h3>
+                </div>
+                <p className="mt-3">{feature.description}</p>
               </div>
             ))}
           </div>

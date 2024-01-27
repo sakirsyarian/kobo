@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Partner() {
   return (
-    <div className="bg-[#fff]">
+    <div className="bg-[#2B1E0F] text-white">
       <div className="container">
         <div className="py-24 space-y-14">
           <p className="text-center">

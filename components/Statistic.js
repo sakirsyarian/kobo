@@ -1,12 +1,20 @@
+import { Lora } from "next/font/google";
+
+const lora = Lora({
+  subsets: ["latin"],
+});
+
 export default function Statistic() {
   return (
-    <div className="bg-[#fff]">
+    <div className="bg-[#3B2D1E] text-white">
       <div className="container">
         <div className="py-24 grid grid-cols-2 items-center gap-8">
-          <h2 className="font-semibold text-3xl">
-            Statistik Mengesankan Menunjukkan Kesuksesan
-            <span className="font-bold"> Kobo </span>Dalam Kemasan Kopi
-          </h2>
+          <div className={lora.className}>
+            <h2 className="font-semibold text-3xl leading-snug">
+              Statistik Mengesankan Menunjukkan Kesuksesan
+              <span className="text-[#FFE9B3]"> Kobo </span>Dalam Kemasan Kopi
+            </h2>
+          </div>
 
           <div className="space-y-8">
             <p>
@@ -16,14 +24,14 @@ export default function Statistic() {
 
             <div className="flex gap-8">
               <div className="stats">
-                <p className="font-semibold text-xl">60%</p>
+                <p className="font-semibold text-2xl text-[#CFAF85]">60%</p>
                 <p className="mt-2">
                   Peningkatan Kemitraan Ritel Karena Popularitas Kobo
                 </p>
               </div>
 
               <div className="stats">
-                <p className="font-semibold text-xl">80%</p>
+                <p className="font-semibold text-2xl text-[#CFAF85]">80%</p>
                 <p className="mt-2">
                   Tingkat Kepuasan Pelanggan Mencerminkan Kualitas Kobo yang
                   Luar Biasa

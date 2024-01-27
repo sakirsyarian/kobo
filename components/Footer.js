@@ -5,9 +5,9 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <div className="bg-[#fff]">
+    <div className="bg-[#3B2D1E] text-white">
       <div className="container">
-        <div className="py-5 space-y-8">
+        <div className="py-8 space-y-8">
           <div className="flex justify-center">
             <Image src="/logo.png" alt="kobo logo" width={80} height={80} />
           </div>
@@ -15,21 +15,23 @@ export default function Footer() {
           {/* menu */}
           <ul className="flex justify-center gap-8">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="#product">Product</Link>
             </li>
             <li>
-              <Link href="/">Product</Link>
+              <Link href="#keunggulan">Keunggulan</Link>
             </li>
             <li>
-              <Link href="/">Promo</Link>
+              <Link href="#testimonial">Testimonial</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="#faq">FAQ</Link>
             </li>
           </ul>
 
           <Separator />
-          <p className="text-center">© 2023 Kobo. All rights reserved.</p>
+          <p className="text-center">
+            © {new Date().getFullYear()} Kobo. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
