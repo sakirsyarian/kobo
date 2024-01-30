@@ -11,19 +11,17 @@ export default function CallToAction() {
   return (
     <div className="bg-[#554535] text-white">
       <div className="container">
-        <div className="py-24 grid grid-cols-2 items-center gap-8">
+        <div className="py-24 grid lg:grid-cols-2 items-center gap-8">
           {/* left */}
-          <div className="space-y-5">
-            <div className={lora.className}>
-              <h2 className="font-semibold text-3xl">
-                Temukan Koleksi Kopi Kami
-              </h2>
-            </div>
-            <p>Rasayakan kekayaan rasa dari kopi botol kami</p>
+          <div className={lora.className}>
+            <h2 className="font-semibold text-3xl">
+              Dapatkan <span className="text-[#FFE9B3]">Diskon 20%</span> untuk
+              20 Pembelian Pertama!
+            </h2>
           </div>
 
           {/* right */}
-          <div className="flex justify-end gap-3">
+          <div className="flex lg:justify-end gap-3">
             <Button className="bg-[#8B5A2B] hover:bg-[#8B5A2B]">
               <Link href="https://tokopedia.com" target="_blank">
                 Order Now

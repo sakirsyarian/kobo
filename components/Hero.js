@@ -12,9 +12,9 @@ export default function Hero() {
   return (
     <div className="bg-gradient-to-b from-[#2B1E0F] to-[#BE8756] text-white">
       <div className="container">
-        <div className="pt-36 pb-24 space-y-8 text-center">
+        <div className="pt-28 lg:pt-36 pb-24 space-y-8 text-center">
           <div className={montserrat.className}>
-            <h1 className="font-bold text-5xl leading-tight">
+            <h1 className="font-bold text-4xl lg:text-5xl leading-tight">
               Temani Harimu yang <br className="hidden md:block" />
               Produktif Dengan
               <span className="text-[#FFE9B3]"> Kobo!</span>

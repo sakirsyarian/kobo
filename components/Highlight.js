@@ -9,7 +9,7 @@ export default function Highlight() {
   return (
     <div className="bg-[#2B1E0F] text-white">
       <div className="container">
-        <div className="py-24 grid grid-cols-2 items-center gap-8">
+        <div className="py-24 grid lg:grid-cols-2 items-center gap-8">
           {/* left */}
           <div className="space-y-8">
             <div className={lora.className}>

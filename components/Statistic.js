@@ -8,7 +8,7 @@ export default function Statistic() {
   return (
     <div className="bg-[#3B2D1E] text-white">
       <div className="container">
-        <div className="py-24 grid grid-cols-2 items-center gap-8">
+        <div className="py-24 grid lg:grid-cols-2 items-center gap-8">
           <div className={lora.className}>
             <h2 className="font-semibold text-3xl leading-snug">
               Statistik Mengesankan Menunjukkan Kesuksesan
@@ -22,7 +22,7 @@ export default function Statistic() {
               tinggi, Kobo telah menjadi favorit di kalangan pecinta kopi.
             </p>
 
-            <div className="flex gap-8">
+            <div className="flex flex-col lg:flex-row gap-8">
               <div className="stats">
                 <p className="font-semibold text-2xl text-[#CFAF85]">60%</p>
                 <p className="mt-2">

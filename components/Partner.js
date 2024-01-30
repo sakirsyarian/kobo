@@ -9,26 +9,30 @@ export default function Partner() {
             Telah dipercaya oleh peritel dan distributor terkemuka di Indoneisa
           </p>
 
-          <div className="flex items-center justify-around">
+          <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-10">
             <Image
+              className="mx-auto"
               src="/partner/tokopedia.png"
               alt="kobo partner"
               width={60}
               height={60}
             />
             <Image
+              className="mx-auto"
               src="/partner/shopee.png"
               alt="kobo partner"
               width={60}
               height={60}
             />
             <Image
+              className="mx-auto"
               src="/partner/blibli.png"
               alt="kobo partner"
               width={60}
               height={60}
             />
             <Image
+              className="mx-auto"
               src="/partner/bukalapak.png"
               alt="kobo partner"
               width={60}

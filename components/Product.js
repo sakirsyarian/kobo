@@ -49,25 +49,27 @@ export default function Product() {
           </div>
 
           {/* list */}
-          <div className="flex justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {products.map((product, index) => (
               <div key={index}>
-                <Image
-                  className="rounded-3xl"
-                  src={`/product/product-${index + 1}.png`}
-                  alt="kobo product"
-                  width={300}
-                  height={300}
-                />
+                <Link href="https://tokopedia.com" target="_blank">
+                  <Image
+                    className="rounded-3xl"
+                    src={`/product/product-${index + 1}.png`}
+                    alt="kobo product"
+                    width={300}
+                    height={300}
+                  />
 
-                <div className="mt-5 flex justify-between">
-                  <p className="font-semibold text-lg">{product.name}</p>
-                  <p className="font-semibold text-lg">{product.price}</p>
-                </div>
+                  <div className="mt-5 flex justify-between">
+                    <p className="font-semibold text-lg">{product.name}</p>
+                    <p className="font-semibold text-lg">{product.price}</p>
+                  </div>
 
-                <p className="mt-2 text-left text-sm text-[#CFAF85]">
-                  {product.description}
-                </p>
+                  <p className="mt-2 text-left text-sm text-[#CFAF85]">
+                    {product.description}
+                  </p>
+                </Link>
               </div>
             ))}
           </div>
